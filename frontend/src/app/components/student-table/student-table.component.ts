@@ -51,10 +51,10 @@ export class StudentTableComponent implements OnInit {
   }
 
   deleteStudent(itemid){
-    const test = {
+    const student = {
       id: itemid
     }
-    this.service.deleteStudent(test).subscribe((response)=>{
+    this.service.deleteStudent(student).subscribe((response)=>{
       this.getStudentData()
     })
   }
